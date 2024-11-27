@@ -1,0 +1,86 @@
+/* Базовые стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .menu {
+    margin: 20px auto;
+    max-width: 400px;
+  }
+  
+  .menu-tabs {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-weight: bold;
+  }
+  
+  .tab:hover {
+    background-color: #ddd;
+  }
+  
+  h1 {
+    margin: 20px 0;
+  }
+  
+  .content {
+    margin-top: 20px;
+  }
+  
+  .content-item {
+    display: none;
+    background-color: #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .content-item.active {
+    display: block;
+  }
+ 
+  .burger {
+    display: none;
+    font-size: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .burger:focus {
+    outline: none;
+  }
+  
+  @media (max-width: 768px) {
+    .burger {
+      display: block;
+    }
+  
+    .menu-tabs {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .menu-tabs.show {
+      display: flex;
+    }
+  
+    .tab {
+      text-align: left;
+      padding: 10px 20px;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+  
